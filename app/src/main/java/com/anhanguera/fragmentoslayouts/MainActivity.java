@@ -23,6 +23,24 @@ public class MainActivity extends AppCompatActivity
                         .replace(R.id.painelConteudo, Fragmento1.newInstance("","")).commit();
             }
         });
+
+        Button btn2 = (Button) findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.painelConteudo, Fragment2.newInstance()).commit();
+            }
+        });
+
+        Button btn3 = (Button) findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.painelConteudo, Fragmento3.newInstance()).commit();
+            }
+        });
     }
 
     @Override

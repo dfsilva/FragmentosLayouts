@@ -2,12 +2,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context="com.anhanguera.fragmentoslayouts.Fragmento3">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="240dp"
+        android:layout_height="167dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="158dp"
+        android:layout_height="102dp"
+        android:text="Button" />
+
 
 </FrameLayout>
